@@ -24,7 +24,7 @@ img#us {
   justify-content: center;
 }
 #ping #ping-west #box, #ping #ping-east #box {
-    background: rgba(0,0,0,.02);
+    background: rgba(121,113,124,1);
     margin: 10px;
     padding: 10px;
     width: 300px;
@@ -38,7 +38,7 @@ img#us {
 
 #ping #ping-west #title, #ping #ping-east #title {
     margin: 5px;
-    font-family: 'Saira', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
