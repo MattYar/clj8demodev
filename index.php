@@ -15,13 +15,17 @@
                 $("#ping-west #box").prepend(data +'<br>');
                 alert(status);
                 if(status == "success")
+                    $('#us').attr("src", "west_up_east_up.png");
+                else
                     $('#us').attr("src", "west_down_east_up.png");
             });
             $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
                 $("#ping-east #box").prepend(data +'<br>');
                 alert(status);
                 if(status == "success")
-                    $('#us').attr("src", "west_down_east_up.png");
+                    $('#us').attr("src", "west_up_east_up.png");
+                else
+                    $('#us').attr("src", "west_up_east_down.png");
             });
         }, 1000);
     });
