@@ -46,7 +46,9 @@ img#us {
 }
 #nav {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #datadog {
     width: 300px;
