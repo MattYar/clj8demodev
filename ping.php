@@ -9,9 +9,9 @@ $data = curl_exec($ch);
 $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 if($httpcode>=200 && $httpcode<300){
-  echo 'Online';
+  echo date('H:i:s') + ' Online';
 } else {
-  echo 'Unresponsive';
+  echo date('H:i:s') + 'Unresponsive';
 }
 
 ?>

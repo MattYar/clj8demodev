@@ -12,10 +12,10 @@
     $(function () {
         var interval = setInterval(function() { 
             $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-west").append(data +'<br>');
+                $("#ping-west").prepend(data +'<br>');
             });
             $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-east").append(data +'<br>');
+                $("#ping-east").prepend(data +'<br>');
             });
         }, 2000);
     });
