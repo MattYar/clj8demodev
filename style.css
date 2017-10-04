@@ -22,7 +22,7 @@ img#us {
   display: flex;
   justify-content: center;
 }
-#ping #box {
+#ping #ping-west #box, #ping #ping-east #box {
     background: rgba(0,0,0,.1);
     margin: 5px;
     padding: 15px;
