@@ -11,7 +11,7 @@
 <script type="text/javascript">
     $(function () {
         $.post("ping.php", function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
+            $("#ping-east").append(data);
         });
         
     });

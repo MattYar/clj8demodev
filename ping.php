@@ -1,6 +1,6 @@
 <?php
 
-$url = 'www.google.com';
+$url = 'www.googlem';
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
