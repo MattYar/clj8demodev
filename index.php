@@ -4,6 +4,8 @@ include 'vulnerability.php';
 <!DOCTYPE html>
 <html>
 <head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
 <meta charset="UTF-8">
 <title>Cloud Project - Team 8</title>
 <link href="style.css" rel="stylesheet">
