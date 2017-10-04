@@ -35,7 +35,9 @@
             <div id=box></div>
         </div>
     </div>
-    <a href="https://starbucks.datadoghq.com/screen/224158/testoperations" target="_blank" id=datadog><img src="datadog.png"></a>
+    <div id=nav>
+        <a href="https://starbucks.datadoghq.com/screen/224158/testoperations" target="_blank" id=datadog><img src="datadog.png"></a>
+    </1div>
 </body>
 
 </html>

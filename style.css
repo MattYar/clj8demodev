@@ -25,10 +25,10 @@ img#us {
 }
 #ping #ping-west #box, #ping #ping-east #box {
     background: rgba(0,0,0,.05);
-    margin: 5px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     width: 300px;
-    height: 100px;
+    height: 150px;
     font-family: 'Inconsolata', monospace;
     font-size: 15px;
     font-weight: 400;
@@ -44,8 +44,11 @@ img#us {
     text-transform: uppercase;
     color: rgba(221,213,224,1);
 }
+#nav {
+  display: flex;
+  justify-content: center;
+}
 #datadog {
-    text-align: center;
     -moz-transform: scale(.9);
     -webkit-transform: scale(.9);
     -o-transform: scale(.9);
