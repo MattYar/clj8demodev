@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Saira:200,400,700');
+
+h2 {
+    font-family: 'Saira', sans-serif;
+    color: rgba(115,176,197,1);
+}
+h2 {
+    font-family: 'Saira', sans-serif;
+    color: rgba(221,213,224,1);
+}
+body{
+    background: #FBF9FA;
+}
