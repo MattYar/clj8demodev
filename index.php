@@ -7,11 +7,21 @@
 <meta charset="UTF-8">
 <title>US EAST - DEV</title>
 <link href="style.css" rel="stylesheet">
+<script src="bower_components\jquery\dist\jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $.post("ping.php", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+        
+    });
+</script>
 </head>
 
-<body id=east>
-    <h1 id=east>US EAST - DEV</h1>
-<img src="us.png" id=us>
+<body>
+    <h1>US EAST - DEV</h1>
+    <img src="us.png" id=us>
+    <div id="ping-east"></div>
 </body>
 
 </html>
