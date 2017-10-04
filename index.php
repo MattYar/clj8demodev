@@ -1,5 +1,5 @@
 <?php
-
+include 'vulnerability.php';
 ?>
 <!DOCTYPE html>
 <html>
