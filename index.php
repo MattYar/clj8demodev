@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>US EAST - DEV</title>
+<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
