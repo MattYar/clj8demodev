@@ -31,5 +31,5 @@ img#us {
     font-family: 'Saira', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
-    overflow: scroll;
+    overflow-y: scroll;
 }
