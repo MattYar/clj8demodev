@@ -1,13 +1,17 @@
 <?php
-function pingAddress($host) {
-    $data = '';
-  if ($host) {
-    $host = preg_replace('/[^\w-_\.]/', '', $host);
-    if ($host) {
-      $data = shell_exec('ping -c 3 '. removeCmd($host));
-    }
-  }
-pingAddress("127.0.0.1");
 
+$url = 'www.google.com';
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$data = curl_exec($ch);
+$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+if($httpcode>=200 && $httpcode<300){
+  echo 'worked';
+} else {
+  echo "didn't work";
 }
+
 ?>
