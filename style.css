@@ -22,7 +22,7 @@ img#us {
    display: flex;
   justify-content: center;
 }
-#ping > * {
+#ping div {
     background: rgba(0,0,0,.1)
     margin: 5px;
 }
