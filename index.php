@@ -38,6 +38,7 @@
     <br>
     <div id=nav>
         <a href="https://starbucks.datadoghq.com/screen/224158/testoperations" target="_blank"><img src="datadog.png" id=datadog></a>
+        <a href="https://github.com/MattYar/clj8demoProd" target="_blank"><img src="github.png" id=github></a>
     </div>
 </body>
 

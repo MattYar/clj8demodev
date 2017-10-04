@@ -49,11 +49,11 @@ img#us {
   justify-content: center;
 }
 #datadog {
-    -moz-transform: scale(.6);
-    -webkit-transform: scale(.6);
-    -o-transform: scale(.6);
-    -ms-transform: scale(.6);
-    transform: scale(.6);
+    -moz-transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -o-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
     -ms-transition: all 100ms ease-in-out;
@@ -61,9 +61,28 @@ img#us {
     transition: all 100ms ease-in-out;
 }
 #datadog:hover {
-    -moz-transform: scale(.65);
-    -webkit-transform: scale(.65);
-    -o-transform: scale(.65);
-    -ms-transform: scale(.65);
-    transform: scale(.65);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+#github {
+    -moz-transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -o-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+#github:hover {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
