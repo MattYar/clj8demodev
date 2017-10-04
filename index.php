@@ -26,15 +26,16 @@
     <h1></h1>
     <img src="us.png" id=us>
     <div id=ping>
-        <div id="ping-east">
-            <div id=title>PINGING US EAST</div>
-            <div id=box></div>
-        </div>
         <div id="ping-west">
             <div id=title>PINGING US WEST</div>
             <div id=box></div>
         </div>
+        <div id="ping-east">
+            <div id=title>PINGING US EAST</div>
+            <div id=box></div>
+        </div>
     </div>
+    <a href="https://starbucks.datadoghq.com/screen/224158/testoperations" target="_blank" id=datadog><img src="datadog.png"></a>
 </body>
 
 </html>
