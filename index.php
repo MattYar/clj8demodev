@@ -13,9 +13,15 @@
         var interval = setInterval(function() { 
             $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(data, status){
                 $("#ping-west #box").prepend(data +'<br>');
+                alert(status);
+                if(status == "success")
+                    $('#us').attr("src", "west_down_east_up.png");
             });
             $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
                 $("#ping-east #box").prepend(data +'<br>');
+                alert(status);
+                if(status == "success")
+                    $('#us').attr("src", "west_down_east_up.png");
             });
         }, 1000);
     });
@@ -24,7 +30,7 @@
 
 <body>
     <h1></h1>
-    <img src="us.png" id=us>
+    <img src="west_up_east_up.png" id=us>
     <div id=ping>
         <div id="ping-west">
             <div id=title>PINGING US WEST</div>
