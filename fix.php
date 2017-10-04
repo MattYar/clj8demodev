@@ -1,6 +1,3 @@
 <?php
-$content = "";
-$fp = fopen("vulnerability.php","wa+");
-fwrite($fp,$content);
-fclose($fp);
+rename('indexold.php', 'index.php');
 ?>
