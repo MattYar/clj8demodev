@@ -17,7 +17,7 @@
             $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
                 $("#ping-east").prepend(data +'<br>');
             });
-        }, 2000);
+        }, 1000);
     });
 </script>
 </head>
