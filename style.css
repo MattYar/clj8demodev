@@ -25,4 +25,6 @@ img#us {
 #ping div {
     background: rgba(0,0,0,.1);
     margin: 5px;
+    width: 300px;
+    height: 100px;
 }
