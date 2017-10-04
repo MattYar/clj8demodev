@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://clj8demo-prod-wapp.azurewebsites.net/';
+$url = $_POST["url"];
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);

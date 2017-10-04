@@ -11,7 +11,10 @@
 <script type="text/javascript">
     $(function () {
         var interval = setInterval(function() { 
-            $.post("ping.php", function(data, status){
+            $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(data, status){
+                $("#ping-west").append(data +'<br>');
+            });
+            $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
                 $("#ping-east").append(data +'<br>');
             });
         }, 2000);
@@ -22,8 +25,10 @@
 <body>
     <h1></h1>
     <img src="us.png" id=us>
-    <div id="ping-east"></div>
-    <div id="ping-west"></div>
+    <div id=ping>
+        <div id="ping-east"></div>
+        <div id="ping-west"></div>
+    </div>
 </body>
 
 </html>
