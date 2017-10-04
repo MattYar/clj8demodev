@@ -10,17 +10,11 @@
 <script src="bower_components\jquery\dist\jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
-        var time = 1;
         var interval = setInterval(function() { 
-        if (time <= 3) { 
             $.post("ping.php", function(data, status){
-                $("#ping-east").append(data);
+                $("#ping-east").append(data +'<br>');
             });
-            time++;
-            }
-        else { 
-            clearInterval(interval);
-        }}, 3000);
+        }, 2000);
     });
 </script>
 </head>
