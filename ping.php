@@ -9,8 +9,5 @@ function pingAddress($host) {
   }
 pingAddress("127.0.0.1");
 
-header("Access-Control-Allow-Origin: *");  
-header('Content-Type: application/json');
-die(json_encode($data));  
 }
 ?>
