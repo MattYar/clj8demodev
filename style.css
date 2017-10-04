@@ -95,12 +95,20 @@ img#us {
     color: White;
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    text-transform: uppercase;
 }
 #fix {
     background: #2ecc71;
     color: White;
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    text-transform: uppercase;
 }
 #fix::before {
     content: "Fix";
