@@ -7,7 +7,7 @@ h1 {
     font-size: 40px;
 }
 h1::before {
-    content:"US EAST - DEv";
+    content:"US EAST - DEV";
 }
 body{
     background: #FBF9FA;
