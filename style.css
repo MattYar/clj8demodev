@@ -9,6 +9,8 @@ h1#west {
 h1#east {
     font-family: 'Saira', sans-serif;
     color: rgba(221,213,224,1);
+    text-align: center;
+    font-size: 40px;
 }
 body{
     background: #FBF9FA;
