@@ -11,22 +11,22 @@
 <script type="text/javascript">
     $(function () {
         var interval = setInterval(function() { 
-            $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-west #box").prepend(data +'<br>');
+            $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(west){
+                $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(east, status){
                 
-                if(data.indexOf("line") != -1)
-                    $('#us').attr("src", "west_up_east_up.png");
-                else
-                    $('#us').attr("src", "west_down_east_up.png");
+                    $("#ping-east #box").prepend(east +'<br>');
+                    $("#ping-west #box").prepend(west +'<br>');
+                    eastUp = east.indexOf("line") != -1;
+                    westUp = west.indexOf("line") != -1;
+                    if(eastUp && westUp)
+                        $('#us').attr("src", "west_up_east_up.png");
+                    else if(eastUp && !westUp)
+                        $('#us').attr("src", "west_down_east_up.png");
+                    else if(!eastUp && westUp)
+                        $('#us').attr("src", "west_up_east_down.png");                
+                });
             });
-            $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-east #box").prepend(data +'<br>');
-                
-                if(data.indexOf("line") != -1)
-                    $('#us').attr("src", "west_up_east_up.png");
-                else
-                    $('#us').attr("src", "west_up_east_down.png");
-            });
+            
         }, 2000);
     });
 </script>
