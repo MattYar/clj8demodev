@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Saira:200,400,700');
 
-h2 {
+h1#west {
     font-family: 'Saira', sans-serif;
     color: rgba(115,176,197,1);
+    text-align: center;
+    font-size: 40px;
 }
-h2 {
+h1#east {
     font-family: 'Saira', sans-serif;
     color: rgba(221,213,224,1);
 }
 body{
     background: #FBF9FA;
+}
+img#us {
+    display: block;
+    margin: auto;
+    width: 700px;
 }

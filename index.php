@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <h2>US EAST - DEV</h2>
-<img src="us.png">
+    <h1 id=east>US EAST - DEV</h1>
+<img src="us.png" id=us>
 </body>
 
 </html>
