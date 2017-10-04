@@ -24,7 +24,7 @@ img#us {
   justify-content: center;
 }
 #ping #ping-west #box, #ping #ping-east #box {
-    background: rgba(0,0,0,.05);
+    background: rgba(0,0,0,.02);
     margin: 10px;
     padding: 10px;
     width: 300px;
@@ -42,7 +42,7 @@ img#us {
     font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
-    color: rgba(221,213,224,1);
+    color: rgba(121,113,124,1);
 }
 #nav {
   display: flex;
