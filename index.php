@@ -28,6 +28,12 @@ include 'vulnerability.php';
             });
             
         }, 1000);
+        $("#ping-east #fix").click(function() {
+            $.post("http://clj8demo-dev-wapp.azurewebsites.net/fix.php");
+        });
+        $("#ping-east #break").click(function() {
+            $.post("http://clj8demo-dev-wapp.azurewebsites.net/break.php");
+        });
     });
 </script>
 </head>
@@ -43,6 +49,8 @@ include 'vulnerability.php';
         <div id="ping-east">
             <div id=title>PINGING US EAST</div>
             <div id=box></div>
+            <div id=fix></div>
+            <div id=break></div>
         </div>
     </div>
     <br>

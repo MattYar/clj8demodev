@@ -37,7 +37,7 @@ img#us {
 }
 
 #ping #ping-west #title, #ping #ping-east #title {
-    margin: 5px;
+    margin: 10px;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
     font-weight: 200;
@@ -89,4 +89,16 @@ img#us {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+#break {
+    background: #e74c3c;
+    color: White;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+#fix {
+    background: #2ecc71;
+    color: White;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
 }
