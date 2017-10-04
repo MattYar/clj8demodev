@@ -9,9 +9,9 @@ $data = curl_exec($ch);
 $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 if($httpcode>=200 && $httpcode<300){
-  echo '<span style="color: #2ecc71">' . date('H:i:s') . ' Online</span>';
+  echo '<span style="color: #2ecc71">' . date('H:i:s') . ' - Online</span>';
 } else {
-  echo '<span style="color: #e74c3c">' . date('H:i:s') . 'Unresponsive</span>';
+  echo '<span style="color: #e74c3c">' . date('H:i:s') . ' - Unresponsive</span>';
 }
 
 ?>
