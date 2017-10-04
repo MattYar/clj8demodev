@@ -9,7 +9,7 @@
 <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body id=east>
     <h1 id=east>US EAST - DEV</h1>
 <img src="us.png" id=us>
 </body>
