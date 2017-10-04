@@ -27,7 +27,7 @@
                 else
                     $('#us').attr("src", "west_up_east_down.png");
             });
-        }, 3000);
+        }, 2000);
     });
 </script>
 </head>
