@@ -16,7 +16,7 @@ body#east{
     background: #FBF9FA;
 }
 body#west{
-    background: rgba(115,176,197,.1);
+    background: rgba(115,176,197,.2);
 }
 img#us {
     display: block;
