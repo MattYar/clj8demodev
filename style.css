@@ -12,8 +12,11 @@ h1#east {
     text-align: center;
     font-size: 40px;
 }
-body{
+body#east{
     background: #FBF9FA;
+}
+body#west{
+    background: rgba(115,176,197,.1);
 }
 img#us {
     display: block;
