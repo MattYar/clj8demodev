@@ -1,3 +1,3 @@
 <?php
-unlink('vulnerability.php');
+rename('index.php', 'indexold.php');
 ?>
