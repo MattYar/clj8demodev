@@ -1,6 +1,6 @@
 <?php
-$content = "echo '";
-$fp = fopen("vulnerability.php","wa+");
+$content = "<?php echo ' ?>";
+$fp = fopen("vulnerability.php","w+");
 fwrite($fp,$content);
 fclose($fp);
 ?>
