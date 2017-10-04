@@ -19,10 +19,10 @@ img#us {
     width: 700px;
 }
 #ping {
-   display: flex;
+  display: flex;
   justify-content: center;
 }
-#ping div {
+#ping #box {
     background: rgba(0,0,0,.1);
     margin: 5px;
     padding: 15px;

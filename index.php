@@ -12,10 +12,10 @@
     $(function () {
         var interval = setInterval(function() { 
             $.post("ping.php", {url: 'http://clj8demo-prod-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-west").prepend(data +'<br>');
+                $("#ping-west #box").prepend(data +'<br>');
             });
             $.post("ping.php", {url: 'http://clj8demo-dev-wapp.azurewebsites.net/'}, function(data, status){
-                $("#ping-east").prepend(data +'<br>');
+                $("#ping-east #box").prepend(data +'<br>');
             });
         }, 1000);
     });
@@ -26,8 +26,14 @@
     <h1></h1>
     <img src="us.png" id=us>
     <div id=ping>
-        <div id="ping-east"></div>
-        <div id="ping-west"></div>
+        <div id="ping-east">
+            <div id=title>title</div>
+            <div id=box></div>
+        </div>
+        <div id="ping-west">
+            <div id=title>title</div>
+            <div id=box></div>
+        </div>
     </div>
 </body>
 
