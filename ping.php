@@ -1,13 +1,15 @@
 <?php
-function pingAddress($ip) {
-    $ping = exec("ping -n 2 $ip", $output, $status);
-    if (strpos($output[2], 'unreachable') !== FALSE) {
-        return '<span style="color:#f00;">OFFLINE</span>';
-    } else {
-        return '<span style="color:green;">ONLINE</span>';
+function pingAddress($host) {
+    $data = '';
+  if ($host) {
+    $host = preg_replace('/[^\w-_\.]/', '', $host);
+    if ($host) {
+      $data = shell_exec('ping -c 3 '. removeCmd($host));
     }
-}
-
+  }
 pingAddress("127.0.0.1");
 
+header("Access-Control-Allow-Origin: *");  
+header('Content-Type: application/json');
+die(json_encode($data));  
 ?>
