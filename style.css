@@ -34,3 +34,11 @@ img#us {
     text-transform: uppercase;
     overflow-y: scroll;
 }
+
+#ping #ping-west #title, #ping #ping-east #title {
+    margin: 5px;
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+}

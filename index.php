@@ -27,11 +27,11 @@
     <img src="us.png" id=us>
     <div id=ping>
         <div id="ping-east">
-            <div id=title>title</div>
+            <div id=title>PINGING US EAST</div>
             <div id=box></div>
         </div>
         <div id="ping-west">
-            <div id=title>title</div>
+            <div id=title>PINGING US WEST</div>
             <div id=box></div>
         </div>
     </div>
