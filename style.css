@@ -102,3 +102,9 @@ img#us {
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
 }
+#fix::before {
+    content: "Fix";
+}
+#break::before {
+    content: "Break";
+}
