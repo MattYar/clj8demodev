@@ -29,7 +29,7 @@ include 'vulnerability.php';
                 });
             });
             
-        }, 1000);
+        }, 200);
         $("#ping-east #fix").click(function() {
             $.post("http://clj8demo-dev-wapp.azurewebsites.net/fix.php");
         });
